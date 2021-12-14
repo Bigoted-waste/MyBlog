@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class IndexController {
 
-    @GetMapping("/{id}/{name}")
-    public String index(@PathVariable Integer id,@PathVariable String name){
+    @GetMapping("/")
+    public String index(){
 
         // 1.运行时异常
 //        int i = 9 / 0;
