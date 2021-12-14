@@ -1,0 +1,20 @@
+#  开发环境
+spring:
+  datasource:
+    username: root
+    password: 123
+    # 进入时区报错了，就增加一个时区的配置就ok了，serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/Blog?useUnicode==true&characterEncoding=utf-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+#logging:
+#  level:
+#    root: info
+#    com.cola: debug
+#  file:
+#    path: log/blog-dev.log
