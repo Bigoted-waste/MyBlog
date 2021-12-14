@@ -18,17 +18,22 @@ public class IndexController {
     public String index(){
 
         // 1.运行时异常
-//        int i = 9 / 0;
+        int i = 9 / 0;
 
         // 2.自定义异常
 //        String blog = null;
 //        if (blog == null) {
 //            throw new NotFoundException("博客不存在");
 //        }
-
-        System.out.println("--------index-------------");
+//
+//        System.out.println("--------index-------------");
 
         return "index";
+    }
+
+    @GetMapping("/blog")
+    public String blog(){
+        return "blog";
     }
 
 }
