@@ -10,6 +10,7 @@ import org.springframework.data.domain.Pageable;
  * @Version 1.0
  */
 
+
 public interface TypeService {
 
     Type saveType(Type type);
