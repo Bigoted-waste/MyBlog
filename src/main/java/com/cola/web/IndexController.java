@@ -18,7 +18,7 @@ public class IndexController {
     public String index(){
 
         // 1.运行时异常
-        int i = 9 / 0;
+//        int i = 9 / 0;
 
         // 2.自定义异常
 //        String blog = null;
