@@ -4,6 +4,8 @@ import com.cola.po.Type;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * @Author Bigoted waste
  * @Date 2021/12/15 上午11:06
@@ -24,4 +26,6 @@ public interface TypeService {
     Type updateType(Long id,Type type);
 
     void deleteType(Long id);
+
+    List<Type> listType();
 }
