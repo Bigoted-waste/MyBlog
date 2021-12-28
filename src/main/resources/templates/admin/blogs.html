@@ -138,6 +138,14 @@
 
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <!-- 底部-->
 <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
@@ -198,14 +206,14 @@
         loaddata();
     }
 
-    $("search-btn").click(function (){
+    $("#search-btn").click(function (){
         loaddata();
     });
 
     function loaddata() {
         $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search", {
             title : $("[name='title']").val(),
-            typeId : $("[name='tpyeId']").val(),
+            typeId : $("[name='typeId']").val(),
             recommend : $("[name='recommend']").prop('checked'),
             page : $("[name='page']").val()
         });
